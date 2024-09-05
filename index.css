@@ -99,7 +99,7 @@ h3 {
 /* start and reset buttons */
 #timekeep-btn {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 10px;
     box-sizing: border-box;
 }
@@ -155,7 +155,7 @@ h3 {
     background-color: #080001;
     color: #EEEEEE;
     border: none;
-    padding: 0 15px;
+    margin: 0 15px;
 }
 
 /* foul and timeout buttons */
