@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "Cursed Timer";
+    src: 
+        local("CursedTimerUlil-Aznm.tff"),
+        url("CursedTimerUlil-Aznm.ttf") format("truetype");
+}
+
+body {
+    margin: 0 auto;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+h3 {
+    color: #EEEEEE;
+    font-size: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 30px;
+
+}
+
+.score {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #080001;
+    color: #F94F6D;
+    border-radius: 5px;
+    font-family: "Cursed Timer";
+    font-size: 90px;
+    text-align: right;
+    margin: 0 auto;
+    padding: 30px 30px 0 0;
+    width: 100%;
+    min-height: 25vh;
+    box-sizing: border-box;
+}
+
+.add-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.score-count {
+    display: flex;
+    margin: 20px 0;
+}
+
+.home-one, .home-two, .home-three, .guest-one, .guest-two, .guest-three {
+    background-color: #1B244A; 
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Cursed Timer";
+    padding: 10px;
+    margin: 0;
+    margin-left: 10px;
+    height: 45px;
+}
+
+.game-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#new-game {
+    background: #EEEEEE;
+    color: #1B244A;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/* timekeep section */
+
+/* start and reset buttons */
+#timekeep-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#start-btn {
+    border-radius: 5px;
+    background: #1B244A;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #EEEEEE;
+}
+
+#reset-btn {
+    border-radius: 5px;
+    background: #EEEEEE;
+    color: #1B244A;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #EEEEEE;
+}
+
+/* row for timer display */
+#timebox {
+    display: flex;
+    justify-content: space-around;
+    background-color: #080001;
+    background: #080001;
+    color: #EEEEEE;
+    border-radius: 5px;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+
+/* time display */
+#timer-display {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Cursed Timer";
+    padding: 8px 0 5px 0;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.timer-btn {
+    display: flex;
+}
+
+/* pause and continue buttons */
+#pause-btn, #continue-btn {
+    background-color: #080001;
+    color: #EEEEEE;
+    border: none;
+    padding: 0 15px;
+}
+
+/* foul and timeout buttons */
+
+.foul-line, .to-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #080001;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.foul-btn, .timeout-btn {
+    background: #9AABD8;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+
+.foul-count, .to-count {
+    display: flex;
+}
+
+.home-foul, .home-to, .guest-to, .guest-foul {
+    margin: 0;
+    font-family: "Cursed Timer";
+    font-size: 20px;
+    color: #EEEEEE;
+} 
+
+.to-total, .foul-total {
+    font-family: "Cursed Timer";
+    font-size: 20px;
+    color: #F94F6D;
+    margin: 0;
+    padding: 0 10px;
+}

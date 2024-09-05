@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/dc46883e79.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="section">
+                <h3>HOME</h3>
+                <div class="score-count">
+                    <p class="score" id="home-score">0</p>
+                    <div class="add-buttons">
+                        <button class="home-one" onclick="homeOne()";>+1</p>
+                        <button class="home-two" onclick="homeTwo()">+2</p>
+                        <button class="home-three" onclick="homeThree()">+3</p>
+                    </div>
+                </div>
+                <div class="foul-line">
+                    <button class="foul-btn" onclick="homeFoul()">FOUL</button>
+                    <div class="foul-count">
+                        <p class="home-foul" id="home-foul">0</p>
+                        <p class="foul-total">/ 4</p>
+                    </div>
+                </div>
+                <div class="to-line">
+                    <button class="timeout-btn" onclick="homeTo()">TIMEOUT</button>
+                    <div class="to-count">
+                        <p class="home-to" id="home-to">0</p>
+                        <p class="to-total">/ 7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="timekeep">
+                <h3>TIMER</h3>
+                <div id="timebox">
+                    <p id="timer-display">12:00</p>
+                    <div class="timer-btn">
+                        <button id="pause-btn"><i class="fa-solid fa-pause fa-lg"></i></button>
+                        <button id="continue-btn"><i class="fa-solid fa-play fa-lg"></i></button>
+                    </div>
+                </div>
+                <div id="timekeep-btn">
+                    <button id="start-btn">START</button>
+                    <button id="reset-btn">RESET</button>
+                </div>
+            </div>
+            <div class="section">
+                <h3>GUEST</h3>
+                <div class="score-count">
+                    <p class="score" id="guest-score">0</p>
+                    <div class="add-buttons">
+                        <button class="guest-one" onclick="guestOne()">+1</p>
+                        <button class="guest-two" onclick="guestTwo()">+2</p>
+                        <button class="guest-three" onclick="guestThree()">+3</p>
+                    </div>
+                </div>
+                <div class="foul-line">
+                    <button class="foul-btn" onclick="guestFoul()">FOUL</button>
+                    <div class="foul-count">
+                        <p class="guest-foul" id="guest-foul">0</p>
+                        <p class="foul-total">/ 4</p>
+                    </div>
+                </div>
+                <div class="to-line">
+                    <button class="timeout-btn" onclick="guestTo()">TIMEOUT</button>
+                    <div class="to-count">
+                        <p class="guest-to" id="guest-to">0</p>
+                        <p class="to-total">/ 7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game-buttons">
+            <button id="new-game" onclick="newGame()">NEW GAME</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
