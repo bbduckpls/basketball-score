@@ -8,7 +8,7 @@ let homeBase = 0
 
 function winningTeam() {
   if (homeBase > guestBase) {
-    homeScore.style.boxShadow = "0 0 10px #EEEEEE"
+    homeScore.style.boxShadow = "0 0 10px #9AABD8"
     guestScore.style.boxShadow = ""
   }
   else if (homeBase === guestBase) {
@@ -17,7 +17,7 @@ function winningTeam() {
   }
   else {
     homeScore.style.boxShadow = ""
-    guestScore.style.boxShadow = "0 0 10px #EEEEEE"
+    guestScore.style.boxShadow = "0 0 10px #9AABD8"
   }
 }
 
