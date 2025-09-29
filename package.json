@@ -1,0 +1,17 @@
+{
+  "name": "Scrim-s04k019",
+  "description": "https://scrimba.com/s04k019/s07tqsh3rq/head",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "19.1.1",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "*"
+  }
+}

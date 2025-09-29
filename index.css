@@ -8,6 +8,44 @@
 body {
     margin: 0 auto;
     background-color: #1B244A;
+    font-family: "Arimo", sans-serif;
+}
+
+h1 {
+    color: #EEEEEE;
+    padding-top: 1em;
+    margin: 0;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #EEEEEE;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    color: #EEEEEE;
+    font-size: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Arimo", sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    height: 100vh;
 }
 
 .container {
@@ -15,16 +53,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 80vh;
-}
-
-h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #EEEEEE;
-    font-size: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0;
 }
 
 .section {
@@ -52,19 +80,7 @@ h3 {
     box-sizing: border-box;
 }
 
-.add-buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-left: 10px;
-}
-
-.score-count {
-    display: flex;
-    margin: 20px 0;
-}
-
-.home-one, .home-two, .home-three, .guest-one, .guest-two, .guest-three {
+.score-btn {
     background-color: #1B244A; 
     color: #9AABD8;
     border: 2px solid #9AABD8;
@@ -72,9 +88,20 @@ h3 {
     font-size: 18px;
     font-family: "Cursed Timer";
     padding: 10px;
-    margin: 0;
-    margin-left: 10px;
     height: 45px;
+}
+
+.score-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: cetner;
+    flex-direction: column;
+}
+
+.score-count {
+    display: flex;
+    gap: 0.5em;
+    margin: 20px 0;
 }
 
 .game-buttons {
@@ -99,7 +126,7 @@ h3 {
 /* start and reset buttons */
 #timekeep-btn {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 10px;
     box-sizing: border-box;
 }
@@ -155,12 +182,12 @@ h3 {
     background-color: #080001;
     color: #EEEEEE;
     border: none;
-    margin: 0 15px;
+    padding: 0 15px;
 }
 
 /* foul and timeout buttons */
 
-.foul-line, .to-line {
+.count-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,30 +196,125 @@ h3 {
     margin: 10px 0;
 }
 
-.foul-btn, .timeout-btn {
+.count-title {
     background: #9AABD8;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     border: 2px solid #EEEEEE;
     border-radius: 5px;
+    color: #1B244A;
 }
 
-.foul-count, .to-count {
+.btn-container {
     display: flex;
+    flex-direction: row;
+    gap: 0.5em;
 }
 
-.home-foul, .home-to, .guest-to, .guest-foul {
+.count-btn {
+    color: #1B244A;
+    background: #9AABD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    margin: 0;
+    font-weight: 500;
+    border: 2px solid #EEEEEE;
+    font-size: 1.5rem;
+}
+
+.count {
     margin: 0;
     font-family: "Cursed Timer";
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #EEEEEE;
 } 
 
-.to-total, .foul-total {
+.total {
     font-family: "Cursed Timer";
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #F94F6D;
     margin: 0;
-    padding: 0 10px;
+    padding: 10px;
+}
+
+.reset-btn {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.3em 0.5em;
+    margin: 2em auto;
+    color: #EEEEEE;
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    background: #1B244A;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .section {
+        width: 60%;
+    }
+    
+    h1 {
+        margin-top: 2em;
+        order: -2;
+    }
+    
+    .reset-btn {
+        margin-top: 2em;
+        order: -1;
+    }
+}
+
+@media (max-width: 705px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .score {
+        min-height: 20vh;
+        font-size: 5rem;
+    }
+    
+    .reset-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 445px) {
+    h1 {
+        font-size: 2rem;
+        padding: 0.5em;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .score {
+        min-height: 10vh;
+        font-size: 4rem;
+        padding: 10px 10px 0 0;
+    }
+    
+    .count-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+    
+    .btn-container {
+        flex: 0;
+    }
 }

@@ -1,8 +1,4 @@
-// more stretch goals: add new game button, highlight the leader, add more counters, change the design/
-
-/* add separate +/- buttons to counters */
-/* only show play and pause after start time is pressed */
-/* have start change to reset button */
+// more stretch goals: add new game button, highlight the leader, add more counters, change the design
 
 // HOME //
 
@@ -12,7 +8,7 @@ let homeBase = 0
 
 function winningTeam() {
   if (homeBase > guestBase) {
-    homeScore.style.boxShadow = "0 0 10px #9AABD8"
+    homeScore.style.boxShadow = "0 0 10px #EEEEEE"
     guestScore.style.boxShadow = ""
   }
   else if (homeBase === guestBase) {
@@ -21,7 +17,7 @@ function winningTeam() {
   }
   else {
     homeScore.style.boxShadow = ""
-    guestScore.style.boxShadow = "0 0 10px #9AABD8"
+    guestScore.style.boxShadow = "0 0 10px #EEEEEE"
   }
 }
 
